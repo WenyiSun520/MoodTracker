@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter} from "react-router-dom";
 import './css/style.css';
 import "animate.css";
@@ -31,12 +32,12 @@ const user = {
   name: "wenyi",
   email: "winnieee.sun@gmail.com"
 };
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOMClient.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App user={user}/>
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App user={user} />
+    </BrowserRouter>
+  </React.StrictMode>
 );
 

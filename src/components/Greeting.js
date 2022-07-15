@@ -9,6 +9,7 @@ import {
   faSmileWink,
   faCheckCircle
 } from "@fortawesome/free-regular-svg-icons";
+import "animate.css";
 import Memo from './Memo'
 
 /*The props of Greeting will include basic user information such as name*/
@@ -44,17 +45,21 @@ export function SayHello(props) {
   return (
     <div className="greeting">
       <div className="dw-info">
-        <p className="animate__fadeInLeft">
+        <p className="animate__animated animate__fadeInLeft">
           <em>{day.toLocaleDateString()}</em>
           <br></br>
           <em>{day.toLocaleTimeString()}</em>
         </p>
       </div>
       <div className="helloUser ">
-        <h2 className="animate__fadeInLeft">{message},"User-Name"</h2>
+        <h2 className="animate__animated animate__fadeInLeft">
+          {message},"User-Name"
+        </h2>
       </div>
       <div className="greetingSetence">
-        <h2 className="animate__fadeInLeft">{greetingDialog[ranDom]}</h2>
+        <h2 className="animate__animated animate__fadeInLeft">
+          {greetingDialog[ranDom]}
+        </h2>
       </div>
     </div>
   );

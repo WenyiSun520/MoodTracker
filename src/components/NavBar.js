@@ -6,19 +6,19 @@ export default function NavBar() {
     <nav id="menu">
       <ul className="menu-list">
         <li>
-          <Link exact to="/" activeClassName="activeLink">
+          <Link to="/" activeclassname="activeLink">
             Check-In
           </Link>
         </li>
 
         <li>
-          <Link exact to="reminder" activeClassName="activeLink">
+          <Link to="reminder" activeclassname="activeLink">
             Reminder
           </Link>
         </li>
 
         <li>
-          <Link exact to="summary" activeClassName="activeLink">
+          <Link to="summary" activeclassname="activeLink">
             Summary
           </Link>
         </li>
