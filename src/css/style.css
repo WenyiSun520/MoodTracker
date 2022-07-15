@@ -5,10 +5,15 @@
     box-sizing: border-box
 }
 
+.components {
+    background-image: url('../../public/img/bg-wave.jpg');
+}
+
 /* Header */
 .components header {
     background-image: url('../../public/img/bg-wave.jpg');
     background-attachment: local;
+    background-position: right top;
     position: fixed;
     width: 100%;
     margin: 0;
@@ -24,7 +29,8 @@
 .components header h1 {
     color: antiquewhite;
     text-align: center;
-
+    mix-blend-mode: screen;
+    font-weight: 400
 }
 
 /* Header Menu */
@@ -91,6 +97,7 @@ footer h2, footer p {
     background-color: lightblue;
     border-radius: 15px;
     border-style: groove;
+    mix-blend-mode:luminosity;
 }
 
 /* Greeting.js: sayHello() func */
@@ -115,7 +122,9 @@ footer h2, footer p {
 }
 
 .moodBtn {
+    mix-blend-mode:unset;
     margin-top: 20px;
+    color: black;
 }
 
 /* Memo.js : PopUp() */
