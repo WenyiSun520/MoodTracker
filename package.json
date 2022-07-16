@@ -12,11 +12,14 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "firebase": "^9.9.0",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
+    "react-calendar": "^3.7.0",
     "react-dom": "^18.2.0",
     "react-firebaseui": "^6.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "victory": "^36.5.3",
     "weather-js": "^2.0.0",
     "web-vitals": "^2.1.4"
   },
@@ -25,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run public", 		
-    "deploy": "firebase build" 
+    "predeploy": "npm run public",
+    "deploy": "firebase build"
   },
   "eslintConfig": {
     "extends": [
