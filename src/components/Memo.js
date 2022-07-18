@@ -15,16 +15,16 @@ return (
 );
 }
 function Popup (prop) {
-    const [textInput, setTextInput] = useState("")
+    const [textInput, setTextInput] = useState("")  //useState to control textarea input
     const ref = useRef(null);
-    const handleClick = function(event){
+    const handleClick = function(event){ // close popup window and record memo
         let textStr = ref.current.value;
         setTextInput(textStr)
-        prop.setTrigger(false)
+        // prop.setTrigger(false)
     }
     console.log(textInput)
      useEffect(() => {
-       prop.setTrigger(false);
+       prop.setTrigger(false); // cloase popup window
      }, []);
 
 

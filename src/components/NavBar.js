@@ -1,28 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowAltCircleRight
+} from "@fortawesome/free-regular-svg-icons";
 
 export default function NavBar() {
   return (
-    <nav id="menu">
-      <ul className="menu-list">
-        <li>
-          <Link to="/" activeclassname="activeLink">
-            Check-In
-          </Link>
-        </li>
+    <nav className="menu">
+      <NavLink className="menu" to="/" activeclassname="activeLink">
+        Check-In
+      </NavLink>
 
-        <li>
-          <Link to="reminder" activeclassname="activeLink">
-            Reminder
-          </Link>
-        </li>
-
-        <li>
-          <Link to="summary" activeclassname="activeLink">
-            Summary
-          </Link>
-        </li>
-      </ul>
+      <NavLink className="menu" to="reminder" activeclassname="activeLink">
+        Reminder
+      </NavLink>
+      <NavLink className="menu" to="signup" activeclassname="activeLink">
+        SignUp
+      </NavLink>
+      <NavLink className="menu" to="signout" activeclassname="activeLink">
+        <FontAwesomeIcon icon={faArrowAltCircleRight} />
+      </NavLink>
     </nav>
   );
 }

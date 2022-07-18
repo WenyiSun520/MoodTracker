@@ -5,6 +5,11 @@ import { BrowserRouter} from "react-router-dom";
 import './css/style.css';
 import "animate.css";
 import App from './components/App';
+
+
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config)
 // sample login user data
 const user = {
   name: "wenyi",
