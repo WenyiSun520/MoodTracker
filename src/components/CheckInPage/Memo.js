@@ -20,7 +20,7 @@ function Popup (prop) {
     const handleClick = function(event){ // close popup window and record memo
         let textStr = ref.current.value;
         setTextInput(textStr)
-        // prop.setTrigger(false)
+        prop.setTrigger(false)
     }
     console.log(textInput)
      useEffect(() => {
